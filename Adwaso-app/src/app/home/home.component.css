@@ -1,0 +1,13 @@
+mat-grid-tile {
+    background: lightgrey;
+  }
+
+.example-button-container {
+    position:relative;
+}
+.del {
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+aside {position: fixed; left: 0; height: 100%; top: 30px; background-color: #99f; padding-top: 25px; z-index: 1; width: 70px;}
