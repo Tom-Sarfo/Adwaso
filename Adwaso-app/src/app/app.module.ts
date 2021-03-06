@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -31,7 +32,8 @@ import { HomeComponent } from './home/home.component';
     MatCardModule,
     BrowserAnimationsModule,
     MatGridListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
