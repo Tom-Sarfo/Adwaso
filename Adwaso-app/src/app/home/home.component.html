@@ -1,100 +1,22 @@
-<div class="container-fluid">
- 
-<!-- Page content -->
-<div class="col-sm-9 main">
-  <h2>Grocery Dashboard</h2>
+<h2>Grocery Store</h2>
   <mat-divider></mat-divider><br>
-  <div class="card container">
-  <div class="container" style="padding: 0.5rem;">
-    <div class="row">
-      <div style="padding: 0.5rem;">
-        <div class="card" style="width: 17rem; padding: 0.5rem;">
-          <img class="card-img-top" src="/assets/images/vegetables-2203300_1920.jpg" alt="Card image cap">
-          <div class="card-body">
-          <h6 class="card-title">Dinner Package</h6>
-          <span style="font-size: 15px;float: right;"><strong>¢50</strong></span><br>
-          <mat-divider></mat-divider><br>
-            <button mat-raised-button color="primary">Edit</button>
-            <div class="example-button-container">
-              <button mat-fab color="warn" aria-label="Example icon button with a delete icon" class="del">
-                <mat-icon>delete</mat-icon>
-              </button>
-          </div>
-          </div>
+<div class="container" style="padding: 0.5rem;">
+  <div class="row">
+    <div style="padding: 0.5rem;" *ngFor="let product of products">
+      <div class="card" style="width: 17rem; padding: 0.5rem;">
+        <img class="card-img-top" [src]=[product.imgUrl] alt="Card image cap">
+        <div class="card-body">
+        <h6 class="card-title">{{ product.name }}</h6>
+        <span style="font-size: 15px;float: right;"><strong>¢{{ product.price }}</strong></span><br>
+        <mat-divider></mat-divider><br>
+          <button mat-raised-button color="primary">Edit</button>
+          <div class="example-button-container">
+            <button mat-fab color="warn" aria-label="Example icon button with a delete icon" class="del">
+              <mat-icon>delete</mat-icon>
+            </button>
+        </div>
         </div>
       </div>
-      <!-- Next product  -->
-      <div style="padding: 0.5rem;">
-        <div class="card" style="width: 17rem; padding: 0.5rem;">
-          <img class="card-img-top" src="/assets/images/paprika-1539491_1920.jpg" alt="Card image cap">
-          <div class="card-body">
-          <h6 class="card-title">Fresh Green Pepper</h6>
-          <span style="font-size: 15px;float: right;"><strong>¢10</strong></span><br>
-          <mat-divider></mat-divider><br>
-            <button mat-raised-button color="primary">Edit</button>
-            <div class="example-button-container">
-              <button mat-fab color="warn" aria-label="Example icon button with a delete icon" class="del">
-                <mat-icon>delete</mat-icon>
-              </button>
-          </div>
-          </div>
-        </div>
-      </div>
-      <!-- next -->
-
-      <div style="padding: 0.5rem;">
-        <div class="card" style="width: 17rem; padding: 0.5rem;">
-          <img class="card-img-top" src="/assets/images/apple-1532055_1920.jpg" alt="Card image cap">
-          <div class="card-body">
-          <h6 class="card-title">Fresh Green Apples</h6>
-          <span style="font-size: 15px;float: right;"><strong>¢10</strong></span><br>
-          <mat-divider></mat-divider><br>
-            <button mat-raised-button color="primary">Edit</button>
-            <div class="example-button-container">
-              <button mat-fab color="warn" aria-label="Example icon button with a delete icon" class="del">
-                <mat-icon>delete</mat-icon>
-              </button>
-          </div>
-          </div>
-        </div>
-      </div>
-      <!-- next -->
-      <div style="padding: 0.5rem;">
-        <div class="card" style="width: 17rem; padding: 0.5rem;">
-          <img class="card-img-top" src="/assets/images/carrots-673184_1920.jpg" alt="Card image cap">
-          <div class="card-body">
-          <h6 class="card-title">Basket of Carrots</h6>
-          <span style="font-size: 15px;float: right;"><strong>¢60</strong></span><br>
-          <mat-divider></mat-divider><br>
-            <button mat-raised-button color="primary">Edit</button>
-            <div class="example-button-container">
-              <button mat-fab color="warn" aria-label="Example icon button with a delete icon" class="del">
-                <mat-icon>delete</mat-icon>
-              </button>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
   </div>
-    
-</div>
-<mat-divider [vertical]="true"></mat-divider>
-
- <!-- Side navigation -->
- <div class="sidenav">
-  <div class="card bg-light mb-3" style="max-width: 18rem;">
-    <div class="card-header">Add Grocery</div>
-    <div class="card-body">
-      <p class="card-text">Add a product to your grocery list</p><br><br>
-      <div class="example-button-container">
-        <button mat-fab color="primary" aria-label="Example icon button with a delete icon" class="del">
-          <mat-icon>add</mat-icon>
-        </button>
-    </div>
-    </div>
-  </div>
-</div>
-
-</div>
+</div> 

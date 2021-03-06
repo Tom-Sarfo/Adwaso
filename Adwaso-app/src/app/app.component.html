@@ -1,17 +1,31 @@
-<nav class="navbar fixed-top navbar-light bg-light">
-  <a class="navbar-brand" routerLink="" style="color: blue;">Adwaso <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>shopping_basket</mat-icon>
-  </button></a>
-  <button mat-raised-button color="primary">Add Grocery</button>
-
-  
-</nav>
-<div class="alert alert-info" role="alert">
-  Hello! there Welcome back to Adwaso
-</div><br><br>
+<!-- page Navigation Bar -->
+<app-navbar></app-navbar>
 <div class="container-fluid">
-    <router-outlet></router-outlet>  
+<!-- Page content -->
+<div class="col-sm-9 main">
+  
+  <div class="card container">
+    <!-- Router Outlet -->
+    <router-outlet></router-outlet>
+  </div>
+    
 </div>
 
+ <!-- Side navigation -->
+ <div class="sidenav">
+  <div class="card bg-light mb-3" style="max-width: 18rem;">
+    <div class="card-header">Add Grocery</div>
+    <div class="card-body">
+      <p class="card-text">Add a product to your grocery list</p><br><br>
+      <div class="example-button-container">
+        <button routerLink="/addproduct" mat-fab color="primary" aria-label="Example icon button with a delete icon" class="del">
+          <mat-icon>add</mat-icon>
+        </button>
+    </div>
+    </div>
+  </div>
+  
+</div>
 
+</div>
 
