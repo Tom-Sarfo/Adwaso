@@ -21,3 +21,8 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+#main-container {
+  margin-top: 10rem;
+  padding: 0.5rem;
+}
+  

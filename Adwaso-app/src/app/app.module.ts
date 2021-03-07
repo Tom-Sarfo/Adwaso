@@ -11,12 +11,17 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatInputModule} from '@angular/material/input';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddProductComponent } from './add-product/add-product.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddGroceryDetailComponent } from './add-product/add-grocery-detail/add-grocery-detail.component';
+import { AddGroceryImageComponent } from './add-product/add-grocery-image/add-grocery-image.component';
+import { ReactiveFormsModule } from "@angular/forms";
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 
 @NgModule({
@@ -24,7 +29,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     AddProductComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddGroceryDetailComponent,
+    AddGroceryImageComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +44,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatGridListModule,
     MatSidenavModule,
     MatDividerModule,
-    MatStepperModule
+    MatStepperModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
